@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "cargo",
+      "command": "build",
+      "group": "build",
+      "options": {
+        "cwd": "${workspaceFolder}/"
+      }
+    },
+    {
+      "label": "build uf2",
+      "type": "shell",
+      "command": "elf2uf2-rs target/thumbv6m-none-eabi/debug/pico-wokwi-playground",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": "build"
+    },
+  ]
+}

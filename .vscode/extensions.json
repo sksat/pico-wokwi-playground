@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "rust-lang.rust-analyzer",
+    "vadimcn.vscode-lldb",
+    "probe-rs.probe-rs-debugger",
+    "wokwi.wokwi-vscode",
+  ]
+}
