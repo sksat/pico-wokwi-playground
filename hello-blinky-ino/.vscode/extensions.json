@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "wokwi.wokwi-vscode",
+    "vsciot-vscode.vscode-arduino",
+    "vadimcn.vscode-lldb",
+  ]
+}
