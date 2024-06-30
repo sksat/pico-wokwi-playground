@@ -1,4 +1,4 @@
 [wokwi]
 version = 1
-firmware = "target/thumbv6m-none-eabi/debug/pico-wokwi-playground.uf2"
-elf = "target/thumbv6m-none-eabi/debug/pico-wokwi-playground"
+firmware = "build/hello-blinky-ino.ino.uf2"
+elf = "build/hello-blinky-ino.ino.elf"
