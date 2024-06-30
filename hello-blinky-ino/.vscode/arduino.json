@@ -1,0 +1,6 @@
+{
+    "sketch": "hello-blinky-ino.ino",
+    "board": "arduino:mbed_rp2040:pico",
+    "output": "./build",
+    "intelliSenseGen": "enable"
+}

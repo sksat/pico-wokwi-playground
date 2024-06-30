@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "author": "sksat",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 0.0,
+      "left": 0.0,
+      "rotate": 0
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 0,
+      "left": -50,
+      "rotate": 0,
+      "hide": false,
+      "attrs": {
+        "color": "red"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "pico:GP0",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "pico:GP1",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "pico:GP5",
+      "led1:A",
+      "green",
+      [
+        "h0"
+      ]
+    ],
+    [
+      "pico:GND.2",
+      "led1:C",
+      "black",
+      [
+        "h0"
+      ]
+    ]
+  ]
+}
