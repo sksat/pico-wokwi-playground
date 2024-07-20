@@ -8,12 +8,10 @@
         "name": "probe_rs Executable Test",
         "flashingConfig": {
           "flashingEnabled": true,
-        },
-        //!MODIFY
+        }
         "chip": "RP2040",
         "coreConfigs": [
           {
-            //!MODIFY
             "programBinary": "target/thumbv6m-none-eabi/debug/pico-wokwi-playground",
           }
         ]
