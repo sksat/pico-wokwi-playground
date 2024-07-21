@@ -17,6 +17,8 @@ use hal::fugit::RateExtU32;
 
 use hal::uart::*;
 
+use defmt_rtt as _;
+
 #[hal::entry]
 fn main() -> ! {
     let mut pac = pac::Peripherals::take().unwrap();
@@ -70,6 +72,7 @@ fn main() -> ! {
     loop {
         led_pin.toggle().unwrap();
         writeln!(uart, "value: {value:02}\r").unwrap();
+        defmt::println!("Hello from defmt");
         timer.delay_ms(500);
         value += 1
     }
